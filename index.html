@@ -1,0 +1,199 @@
+<html><head><base href="https://menafraud.com/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENA Fraud | Middle East and North Africa Fraud Prevention</title>
+    <style>
+        :root {
+            --primary-color: #1a5f7a;
+            --secondary-color: #ffc300;
+            --text-color: #333;
+            --bg-color: #f4f4f4;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style-type: none;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: var(--secondary-color);
+        }
+        main {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .hero {
+            background-image: url('https://example.com/images/mena-map.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 4rem 2rem;
+            margin-bottom: 2rem;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #e6b000;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        .feature {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .feature:hover {
+            transform: translateY(-5px);
+        }
+        .feature h2 {
+            color: var(--primary-color);
+        }
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">MENA FRAUD</div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/webinars">Webinars</a></li>
+                <li><a href="/jobs">Jobs</a></li>
+                <li><a href="/tools">Tools</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/articles">Articles</a></li>
+                <li><a href="/news">News</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Protecting the MENA Region from Fraud</h1>
+            <p>Join our community of fraud prevention experts and stay ahead of emerging threats.</p>
+            <a href="/join" class="cta-button">Join Now</a>
+        </section>
+
+        <section class="features">
+            <div class="feature">
+                <h2>Expert Webinars</h2>
+                <p>Access exclusive webinars featuring industry leaders sharing insights on the latest fraud prevention strategies.</p>
+            </div>
+            <div class="feature">
+                <h2>Job Opportunities</h2>
+                <p>Find or post fraud prevention job openings across the Middle East and North Africa region.</p>
+            </div>
+            <div class="feature">
+                <h2>Fraud Prevention Tools</h2>
+                <p>Discover and compare cutting-edge tools and technologies to enhance your organization's fraud detection capabilities.</p>
+            </div>
+            <div class="feature">
+                <h2>Latest News</h2>
+                <p>Stay informed with our curated news feed covering fraud trends, regulatory updates, and cybersecurity developments in the MENA region.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 MENA Fraud. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const features = document.querySelectorAll('.feature');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = 1;
+                        entry.target.style.transform = 'translateY(0) scale(1)';
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            features.forEach((feature, index) => {
+                feature.style.opacity = 0;
+                feature.style.transform = 'translateY(20px) scale(0.95)';
+                feature.style.transition = `opacity 0.5s ease ${index * 0.2}s, transform 0.5s ease ${index * 0.2}s`;
+                observer.observe(feature);
+            });
+
+            // Simulated real-time fraud alert
+            setTimeout(() => {
+                const alertDiv = document.createElement('div');
+                alertDiv.style.position = 'fixed';
+                alertDiv.style.bottom = '20px';
+                alertDiv.style.right = '20px';
+                alertDiv.style.backgroundColor = '#ff4136';
+                alertDiv.style.color = 'white';
+                alertDiv.style.padding = '10px';
+                alertDiv.style.borderRadius = '5px';
+                alertDiv.style.boxShadow = '0 2px 5px rgba(0,0,0,0.2)';
+                alertDiv.innerHTML = '<strong>Fraud Alert:</strong> New phishing campaign detected in UAE. Check our latest article for details.';
+                
+                document.body.appendChild(alertDiv);
+
+                setTimeout(() => {
+                    alertDiv.style.transition = 'opacity 0.5s ease';
+                    alertDiv.style.opacity = '0';
+                    setTimeout(() => alertDiv.remove(), 500);
+                }, 5000);
+            }, 3000);
+        });
+    </script>
+</body></html>

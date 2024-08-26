@@ -1,0 +1,186 @@
+<html><head><base href="/webinars/jobs/about">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENA Fraud - About Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #1a5f7a;
+            color: white;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            width: 150px;
+            height: 50px;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            color: #1a5f7a;
+            border-radius: 5px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        main {
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .about-section {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        .team-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .team-member {
+            text-align: center;
+            margin: 1rem;
+        }
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">MENA FRAUD</div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/webinars">Webinars</a></li>
+                <li><a href="/jobs">Jobs</a></li>
+                <li><a href="/tools">Tools</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/articles">Articles</a></li>
+                <li><a href="/news">News</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>About MENA Fraud</h1>
+        
+        <section class="about-section">
+            <h2>Our Mission</h2>
+            <p>At MENA Fraud, we are dedicated to safeguarding businesses and individuals across the Middle East and North Africa region from the ever-evolving threat of fraud. Our mission is to provide cutting-edge fraud prevention solutions, expert consultancy, and comprehensive education to empower organizations in their fight against financial crime.</p>
+        </section>
+
+        <section class="about-section">
+            <h2>Our Story</h2>
+            <p>Founded in 2015 by a team of cybersecurity experts and former law enforcement professionals, MENA Fraud has quickly become the leading authority on fraud prevention in the MENA region. We recognized the unique challenges faced by businesses operating in this diverse and rapidly growing market and set out to create tailored solutions that address these specific needs.</p>
+            <p>Over the years, we have expanded our services to include online webinars, job placement for fraud prevention professionals, and the development of state-of-the-art fraud prevention tools. Our commitment to innovation and excellence has earned us the trust of major financial institutions, e-commerce platforms, and government agencies across the region.</p>
+        </section>
+
+        <section class="about-section">
+            <h2>Our Approach</h2>
+            <p>We believe that effective fraud prevention requires a multi-faceted approach. That's why we offer:</p>
+            <ul>
+                <li>Cutting-edge technology solutions</li>
+                <li>Comprehensive training and education programs</li>
+                <li>Expert consultancy services</li>
+                <li>Networking opportunities for fraud prevention professionals</li>
+                <li>Up-to-date information on the latest fraud trends and prevention techniques</li>
+            </ul>
+        </section>
+
+        <section class="about-section">
+            <h2>Our Team</h2>
+            <p>MENA Fraud is powered by a diverse team of experts from various backgrounds, including cybersecurity, finance, law enforcement, and data science. Meet some of our key team members:</p>
+            <div class="team-section">
+                <div class="team-member">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Headshot of Ahmed Khalil, CEO" width="150" height="150">
+                    <h3>Ahmed Khalil</h3>
+                    <p>CEO & Co-founder</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Headshot of Fatima Al-Sayed, CTO" width="150" height="150">
+                    <h3>Fatima Al-Sayed</h3>
+                    <p>CTO</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://randomuser.me/api/portraits/men/41.jpg" alt="Headshot of Omar Nassir, Head of Research" width="150" height="150">
+                    <h3>Omar Nassir</h3>
+                    <p>Head of Research</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 MENA Fraud. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Add smooth scrolling to all links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+
+            // Add hover effect to team members
+            const teamMembers = document.querySelectorAll('.team-member');
+            teamMembers.forEach(member => {
+                member.addEventListener('mouseover', () => {
+                    member.style.transform = 'scale(1.05)';
+                    member.style.transition = 'transform 0.3s ease';
+                });
+                member.addEventListener('mouseout', () => {
+                    member.style.transform = 'scale(1)';
+                });
+            });
+
+            // Add a simple animation to the mission statement
+            const missionSection = document.querySelector('.about-section');
+            missionSection.style.opacity = '0';
+            missionSection.style.transform = 'translateY(20px)';
+            missionSection.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+
+            setTimeout(() => {
+                missionSection.style.opacity = '1';
+                missionSection.style.transform = 'translateY(0)';
+            }, 300);
+        });
+    </script>
+</body></html>

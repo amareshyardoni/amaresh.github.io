@@ -1,0 +1,219 @@
+<html><head><base href="https://menafraud.com/articles">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles | MENA Fraud</title>
+    <style>
+        :root {
+            --primary-color: #1a5f7a;
+            --secondary-color: #ffc300;
+            --text-color: #333;
+            --bg-color: #f4f4f4;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style-type: none;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: var(--secondary-color);
+        }
+        main {
+            padding-top: 80px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 20px 20px;
+        }
+        h1, h2 {
+            color: var(--primary-color);
+        }
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .article-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .article-card:hover {
+            transform: translateY(-5px);
+        }
+        .article-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .article-content {
+            padding: 1.5rem;
+        }
+        .article-title {
+            font-size: 1.2rem;
+            margin-top: 0;
+        }
+        .article-excerpt {
+            font-size: 0.9rem;
+            color: #666;
+        }
+        .read-more {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            margin-top: 1rem;
+        }
+        .read-more:hover {
+            background-color: #e6b000;
+        }
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">MENA FRAUD</div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/webinars">Webinars</a></li>
+                <li><a href="/jobs">Jobs</a></li>
+                <li><a href="/tools">Tools</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/articles">Articles</a></li>
+                <li><a href="/news">News</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Latest Articles on Fraud Prevention in MENA</h1>
+        <p>Stay informed with our collection of articles covering the latest trends, insights, and best practices in fraud prevention across the Middle East and North Africa region.</p>
+
+        <div class="articles-grid">
+            <article class="article-card">
+                <img src="https://menafraud.com/images/ai-fraud-detection.jpg" alt="AI-powered fraud detection system visualization" class="article-image" width="300" height="200">
+                <div class="article-content">
+                    <h2 class="article-title">The Rise of AI in MENA's Fraud Detection Landscape</h2>
+                    <p class="article-excerpt">Explore how artificial intelligence is revolutionizing fraud detection in the MENA region, improving accuracy and reducing false positives.</p>
+                    <a href="https://menafraud.com/articles/ai-fraud-detection-mena" class="read-more">Read More</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <img src="https://menafraud.com/images/cryptocurrency-fraud.jpg" alt="Cryptocurrency coins with warning signs" class="article-image" width="300" height="200">
+                <div class="article-content">
+                    <h2 class="article-title">Cryptocurrency Fraud: A Growing Concern in MENA</h2>
+                    <p class="article-excerpt">Delve into the rising threat of cryptocurrency-related fraud in the Middle East and North Africa, and learn about preventive measures.</p>
+                    <a href="https://menafraud.com/articles/cryptocurrency-fraud-mena" class="read-more">Read More</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <img src="https://menafraud.com/images/regulatory-compliance.jpg" alt="Regulatory compliance documents and stamps" class="article-image" width="300" height="200">
+                <div class="article-content">
+                    <h2 class="article-title">Navigating MENA's Complex Regulatory Landscape</h2>
+                    <p class="article-excerpt">An in-depth look at the evolving regulatory environment in MENA and its impact on fraud prevention strategies for businesses.</p>
+                    <a href="https://menafraud.com/articles/mena-regulatory-landscape" class="read-more">Read More</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <img src="https://menafraud.com/images/identity-theft.jpg" alt="Shadowy figure trying to steal personal information" class="article-image" width="300" height="200">
+                <div class="article-content">
+                    <h2 class="article-title">Identity Theft in the Digital Age: MENA's Response</h2>
+                    <p class="article-excerpt">Examine the growing threat of identity theft in MENA and the innovative solutions being developed to combat this issue.</p>
+                    <a href="https://menafraud.com/articles/identity-theft-mena" class="read-more">Read More</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <img src="https://menafraud.com/images/mobile-banking-security.jpg" alt="Secure mobile banking app interface" class="article-image" width="300" height="200">
+                <div class="article-content">
+                    <h2 class="article-title">Securing Mobile Banking in MENA: Challenges and Solutions</h2>
+                    <p class="article-excerpt">Investigate the unique challenges faced by mobile banking providers in MENA and the cutting-edge security measures being implemented.</p>
+                    <a href="https://menafraud.com/articles/mobile-banking-security-mena" class="read-more">Read More</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <img src="https://menafraud.com/images/cross-border-fraud.jpg" alt="Map showing international financial transactions" class="article-image" width="300" height="200">
+                <div class="article-content">
+                    <h2 class="article-title">Cross-Border Fraud: A MENA Perspective</h2>
+                    <p class="article-excerpt">Analyze the complexities of cross-border fraud in the MENA region and the collaborative efforts to address this transnational challenge.</p>
+                    <a href="https://menafraud.com/articles/cross-border-fraud-mena" class="read-more">Read More</a>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 MENA Fraud. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const articleCards = document.querySelectorAll('.article-card');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = 1;
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            articleCards.forEach(card => {
+                card.style.opacity = 0;
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                observer.observe(card);
+            });
+        });
+    </script>
+</body></html>

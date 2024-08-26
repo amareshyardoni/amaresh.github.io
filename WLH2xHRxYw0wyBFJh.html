@@ -1,0 +1,218 @@
+<html><head><base href="https://menafraud.com/webinars">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENA Fraud | Webinars on Financial Crime Prevention</title>
+    <style>
+        :root {
+            --primary-color: #1a5f7a;
+            --secondary-color: #ffc300;
+            --text-color: #333;
+            --bg-color: #f4f4f4;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style-type: none;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: var(--secondary-color);
+        }
+        main {
+            padding-top: 80px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 20px 20px;
+        }
+        h1 {
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .webinar-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .webinar-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .webinar-card:hover {
+            transform: translateY(-5px);
+        }
+        .webinar-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .webinar-content {
+            padding: 1rem;
+        }
+        .webinar-title {
+            color: var(--primary-color);
+            margin-top: 0;
+        }
+        .webinar-date {
+            color: #666;
+            font-style: italic;
+        }
+        .webinar-description {
+            margin-bottom: 1rem;
+        }
+        .btn {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #e6b000;
+        }
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">MENA FRAUD</div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/webinars">Webinars</a></li>
+                <li><a href="/jobs">Jobs</a></li>
+                <li><a href="/tools">Tools</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/articles">Articles</a></li>
+                <li><a href="/news">News</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Upcoming Webinars on Financial Crime Prevention</h1>
+        <div class="webinar-grid">
+            <div class="webinar-card">
+                <img src="https://example.com/ai-fraud-detection.jpg" alt="AI in Fraud Detection" class="webinar-image">
+                <div class="webinar-content">
+                    <h2 class="webinar-title">AI in Fraud Detection: MENA Perspectives</h2>
+                    <p class="webinar-date">June 15, 2023 | 2:00 PM GST</p>
+                    <p class="webinar-description">Explore how artificial intelligence is revolutionizing fraud detection in the MENA region. Learn about the latest AI technologies and their applications in combating financial crime.</p>
+                    <a href="/webinars/ai-fraud-detection" class="btn">Register Now</a>
+                </div>
+            </div>
+            <div class="webinar-card">
+                <img src="https://example.com/aml-compliance.jpg" alt="AML Compliance" class="webinar-image">
+                <div class="webinar-content">
+                    <h2 class="webinar-title">AML Compliance in the Gulf States</h2>
+                    <p class="webinar-date">July 3, 2023 | 3:00 PM GST</p>
+                    <p class="webinar-description">Stay up-to-date with the latest Anti-Money Laundering regulations in the Gulf Cooperation Council countries. Our experts will guide you through recent changes and best practices.</p>
+                    <a href="/webinars/aml-compliance-gulf" class="btn">Register Now</a>
+                </div>
+            </div>
+            <div class="webinar-card">
+                <img src="https://example.com/crypto-fraud.jpg" alt="Cryptocurrency Fraud" class="webinar-image">
+                <div class="webinar-content">
+                    <h2 class="webinar-title">Cryptocurrency Fraud: Emerging Threats</h2>
+                    <p class="webinar-date">July 20, 2023 | 1:00 PM GST</p>
+                    <p class="webinar-description">Discover the latest trends in cryptocurrency fraud and learn strategies to protect your digital assets. Our panel of experts will discuss real-world cases and prevention techniques.</p>
+                    <a href="/webinars/crypto-fraud-threats" class="btn">Register Now</a>
+                </div>
+            </div>
+            <div class="webinar-card">
+                <img src="https://example.com/trade-based-money-laundering.jpg" alt="Trade-Based Money Laundering" class="webinar-image">
+                <div class="webinar-content">
+                    <h2 class="webinar-title">Combating Trade-Based Money Laundering</h2>
+                    <p class="webinar-date">August 8, 2023 | 11:00 AM GST</p>
+                    <p class="webinar-description">Understand the complexities of trade-based money laundering and its impact on MENA economies. Learn about advanced detection methods and regulatory expectations.</p>
+                    <a href="/webinars/trade-based-money-laundering" class="btn">Register Now</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 MENA Fraud. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const webinarCards = document.querySelectorAll('.webinar-card');
+
+            const fadeInObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = 1;
+                        entry.target.style.transform = 'translateY(0) scale(1)';
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            webinarCards.forEach((card, index) => {
+                card.style.opacity = 0;
+                card.style.transform = 'translateY(20px) scale(0.95)';
+                card.style.transition = `opacity 0.5s ease ${index * 0.1}s, transform 0.5s ease ${index * 0.1}s`;
+                fadeInObserver.observe(card);
+            });
+
+            // Add hover effect to webinar cards
+            webinarCards.forEach(card => {
+                card.addEventListener('mouseenter', () => {
+                    card.style.transform = 'translateY(-10px) scale(1.03)';
+                    card.style.boxShadow = '0 6px 12px rgba(0, 0, 0, 0.15)';
+                });
+
+                card.addEventListener('mouseleave', () => {
+                    card.style.transform = 'translateY(0) scale(1)';
+                    card.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
+                });
+            });
+        });
+    </script>
+</body></html>
